@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import { Navbar } from "@/components/navbar";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -73,6 +74,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${playfairDisplay.variable} ${jetbrainsMono.variable} antialiased`}>
         <Navbar />
         <main className="relative">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
