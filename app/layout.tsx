@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Playfair_Display, JetBrains_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/navbar";
 import "./globals.css";
 
@@ -73,6 +74,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${playfairDisplay.variable} ${jetbrainsMono.variable} antialiased`}>
         <Navbar />
         <main className="relative">{children}</main>
+        <SpeedInsights />
       </body>
     </html>
   );
