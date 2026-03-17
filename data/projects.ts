@@ -52,7 +52,7 @@ A modern, full-stack freelance marketplace platform connecting clients with inde
     title: "Personal Portfolio",
     description:
       "A meticulously crafted, dark-themed developer portfolio built with Next.js 16 and Tailwind CSS v4. Features a custom ASCII art hero section, smooth Framer Motion animations, and a Markdown-powered static blog engine for case studies.",
-    tags: ["TypeScript", "Next.js", "Tailwind CSS", "Motion"],
+    tags: ["TypeScript", "Next.js", "Tailwind", "Motion"],
     year: "2026",
     github: "https://github.com/r3medy/portfolio",
     content: `
