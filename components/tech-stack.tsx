@@ -47,13 +47,11 @@ export function TechStackSection() {
       {techStack.map((item) => (
         <div
           key={item.name}
-          className="group flex items-center gap-3 px-4 py-3 bg-mono-800/40 border border-mono-800/60 rounded-lg hover:bg-mono-800/70 hover:border-mono-700/60 transition-all duration-300">
-          <span className="text-mono-300 group-hover:text-mono-200 transition-colors">
+          className="group flex items-center gap-3 px-4 py-3 bg-mono-800/40 border border-mono-800/60 rounded-lg">
+          <span className="text-mono-300">
             <TechIcon icon={item.icon} />
           </span>
-          <span className="text-sm text-mono-300 group-hover:text-mono-100 transition-colors">
-            {item.name}
-          </span>
+          <span className="text-sm text-mono-300">{item.name}</span>
         </div>
       ))}
     </div>
