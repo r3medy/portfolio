@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/hero-section";
 import { ProjectCard } from "@/components/project-card";
 import { TechStackSection } from "@/components/tech-stack";
+import { CertificationsSection } from "@/components/certifications-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { SectionHeading } from "@/components/section-heading";
@@ -35,6 +36,14 @@ export default function Home() {
               The tools and technologies I use to build products.
             </p>
             <TechStackSection />
+          </section>
+        </AnimatedSection>
+
+        {/* Certifications */}
+        <AnimatedSection delay={0.1}>
+          <section id="certifications" className="py-16 scroll-mt-20">
+            <SectionHeading label="Education & Training" title="Certifications" />
+            <CertificationsSection />
           </section>
         </AnimatedSection>
 

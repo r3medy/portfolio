@@ -30,7 +30,7 @@ export function HeroSection() {
             className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-mono-800 bg-mono-900/50 rounded-lg text-mono-300 text-sm hover:bg-mono-800 hover:text-mono-100 transition-all duration-300 w-full sm:w-auto"
             target="_blank"
             rel="noopener noreferrer">
-            Download my CV
+            View my CV
             <svg
               className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5"
               fill="none"
@@ -49,7 +49,7 @@ export function HeroSection() {
             className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-mono-600 rounded-lg text-mono-200 text-sm hover:border-mono-400 hover:text-mono-50 transition-all duration-300 w-full sm:w-auto">
             View my work
             <svg
-              className="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5"
+              className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
