@@ -23,6 +23,38 @@ export async function generateMetadata({ params }: ProjectPageProps) {
   return {
     title: `${project.title} | Yousef Adel`,
     description: project.description,
+    keywords: [
+      ...project.tags,
+      "Yousef Adel",
+      "Portfolio",
+      "Project",
+      project.title,
+    ],
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Yousef Adel`,
+      description: project.description,
+      url: `https://www.yousefworks.online/projects/${project.slug}`,
+      siteName: "Yousef Adel - Portfolio",
+      images: [
+        {
+          url: `/${project.slug}.png`,
+          width: 1200,
+          height: 675,
+          alt: `${project.title} Preview`,
+        },
+      ],
+      locale: "en_US",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Yousef Adel`,
+      description: project.description,
+      images: [`/${project.slug}.png`],
+    },
   };
 }
 

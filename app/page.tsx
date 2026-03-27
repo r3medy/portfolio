@@ -6,11 +6,14 @@ import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { SectionHeading } from "@/components/section-heading";
 import { AnimatedSection } from "@/components/animated-section";
+import { JsonLd } from "@/components/json-ld";
 import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
     <>
+      <JsonLd />
+
       {/* Hero */}
       <HeroSection />
 

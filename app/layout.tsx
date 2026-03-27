@@ -25,8 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yousefworks.online"),
   title: "Yousef Adel | Software Engineer",
-  description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+  description:
+    "Software Engineer & Frontend Developer crafting modern web experiences.",
   keywords: [
     "Yousef Adel",
     "Portfolio",
@@ -36,9 +38,21 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
   ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Yousef Adel | Software Engineer",
-    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description:
+      "Software Engineer & Frontend Developer crafting modern web experiences.",
     url: "https://www.yousefworks.online",
     siteName: "Yousef Adel - Portfolio",
     images: [
@@ -55,7 +69,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yousef Adel | Software Engineer",
-    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description:
+      "Software Engineer & Frontend Developer crafting modern web experiences.",
     images: ["/og-image.png"],
   },
 };
