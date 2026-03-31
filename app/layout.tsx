@@ -38,6 +38,14 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
   ],
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icon0.svg", type: "image/svg+xml" },
+      { url: "/icon1.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+  },
   robots: {
     index: true,
     follow: true,
