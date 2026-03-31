@@ -27,8 +27,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.yousefworks.online"),
   title: "Yousef Adel | Software Engineer",
-  description:
-    "Software Engineer & Frontend Developer crafting modern web experiences.",
+  description: "Software Engineer & Frontend Developer crafting modern web experiences.",
   keywords: [
     "Yousef Adel",
     "Portfolio",
@@ -41,8 +40,10 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/icon0.svg", type: "image/svg+xml" },
-      { url: "/icon1.png", type: "image/png" },
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", type: "image/png" },
+      { url: "/favicon-32x32.png", type: "image/png" },
+      { url: "/favicon-192x192.png", type: "image/png" },
     ],
     apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
@@ -59,8 +60,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Yousef Adel | Software Engineer",
-    description:
-      "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
     url: "https://www.yousefworks.online",
     siteName: "Yousef Adel - Portfolio",
     images: [
@@ -77,8 +77,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yousef Adel | Software Engineer",
-    description:
-      "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
     images: ["/og-image.png"],
   },
 };
