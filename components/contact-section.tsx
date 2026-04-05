@@ -61,9 +61,11 @@ export function ContactSection() {
           <a
             key={link.label}
             href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-between px-5 py-4 bg-mono-800/30 border border-mono-800/60 rounded-lg hover:bg-mono-800/50 hover:border-mono-700/60 transition-all duration-300">
+            {...(link.href.startsWith("mailto:")
+              ? {}
+              : { target: "_blank", rel: "noopener noreferrer" })}
+            className="group flex items-center justify-between px-5 py-4 bg-mono-800/30 border border-mono-800/60 rounded-lg hover:bg-mono-800/50 hover:border-mono-700/60 transition-all duration-300"
+            aria-label={`${link.label}: ${link.value}`}>
             <div className="flex items-center gap-3">
               <span className="text-mono-500 group-hover:text-mono-300 transition-colors">
                 {link.icon}

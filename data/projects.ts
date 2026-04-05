@@ -19,8 +19,6 @@ export const projects: Project[] = [
     year: "2025",
     github: "https://github.com/r3medy/swe-project",
     content: `
-# Freelance Marketplace Platform
-
 ## Overview
 A modern, full-stack freelance marketplace platform connecting clients with independent professionals. The application facilitates the entire freelance lifecycle—from job posting and discovery, to proposal submission and real-time communication. Built with robust role-based access control, the platform serves three distinct user groups: Clients looking to hire, Freelancers seeking opportunities, and Administrators governing the ecosystem.
 

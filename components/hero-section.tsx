@@ -26,17 +26,19 @@ export function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/Yousef Adel's CV.pdf"
+            href="/yousef-adel-cv.pdf"
             className="group inline-flex items-center justify-center gap-2 px-6 py-3 border border-mono-800 bg-mono-900/50 rounded-lg text-mono-300 text-sm hover:bg-mono-800 hover:text-mono-100 transition-all duration-300 w-full sm:w-auto"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            aria-label="Download Yousef Adel's CV as PDF">
             View my CV
             <svg
               className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={1.5}>
+              strokeWidth={1.5}
+              aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -53,7 +55,8 @@ export function HeroSection() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={1.5}>
+              strokeWidth={1.5}
+              aria-hidden="true">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

@@ -27,25 +27,30 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.yousefworks.online"),
   title: "Yousef Adel | Software Engineer",
-  description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+  description:
+    "Yousef Adel is a Software Engineer and Frontend Developer specializing in React, Next.js, and TypeScript. Explore projects, case studies, and technical expertise.",
   keywords: [
     "Yousef Adel",
-    "Portfolio",
     "Software Engineer",
     "Frontend Developer",
     "Web Developer",
-    "React",
-    "Next.js",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "Portfolio",
+    "Full Stack Developer",
   ],
+  authors: [{ name: "Yousef Adel", url: "https://www.yousefworks.online" }],
+  creator: "Yousef Adel",
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-16x16.png", type: "image/png" },
-      { url: "/favicon-32x32.png", type: "image/png" },
-      { url: "/favicon-192x192.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
     ],
-    apple: [{ url: "/apple-icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   robots: {
     index: true,
@@ -53,6 +58,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
   alternates: {
@@ -60,7 +68,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Yousef Adel | Software Engineer",
-    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description:
+      "Yousef Adel is a Software Engineer and Frontend Developer specializing in React, Next.js, and TypeScript. Explore projects, case studies, and technical expertise.",
     url: "https://www.yousefworks.online",
     siteName: "Yousef Adel - Portfolio",
     images: [
@@ -77,7 +86,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yousef Adel | Software Engineer",
-    description: "Software Engineer & Frontend Developer crafting modern web experiences.",
+    description:
+      "Yousef Adel is a Software Engineer and Frontend Developer specializing in React, Next.js, and TypeScript. Explore projects, case studies, and technical expertise.",
     images: ["/og-image.png"],
   },
 };

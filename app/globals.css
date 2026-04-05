@@ -92,7 +92,8 @@
   }
   .prose-dark h1,
   .prose-dark h2,
-  .prose-dark h3 {
+  .prose-dark h3,
+  .prose-dark h4 {
     @apply text-mono-50 font-display italic mt-8 mb-4;
   }
   .prose-dark h1 {
@@ -103,6 +104,9 @@
   }
   .prose-dark h3 {
     @apply text-xl;
+  }
+  .prose-dark h4 {
+    @apply text-lg;
   }
   .prose-dark p {
     @apply mb-4;
